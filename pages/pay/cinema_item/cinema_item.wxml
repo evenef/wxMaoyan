@@ -1,0 +1,11 @@
+<template name="cinema_item">
+  <view class="cinema_item" catchtap="topay_scene" data-cinema="{{item.cinema}}">
+    <view class="cinemaName">{{item.cinema}} <text class="price">{{item.minPrice}}</text><text class="price_i">元起</text></view>
+    <view class="address"><text>{{item.address}}</text><text class="away">1.5km</text></view>
+    <view class="tipsicon"><text class="icon">座</text><text class="icon">IMAX</text><text class="icon iconOrange">折扣卡</text></view>
+    <view class="scene">
+      <text>近期场次：</text>
+      <text wx:for="{{item.sceneTime}}" wx:for-item="time" wx:key="{{time}}">{{time}} </text>
+    </view>
+  </view>
+</template>

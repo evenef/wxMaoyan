@@ -1,0 +1,5 @@
+<template name="info_imgs">
+  <view class="info_imgs">
+     <image src="../../../{{item}}" mode="aspectFill"></image>
+  </view>
+</template>

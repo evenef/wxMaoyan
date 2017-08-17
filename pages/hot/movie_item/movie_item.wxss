@@ -1,0 +1,60 @@
+.movie_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 280rpx;
+  border-bottom: 1px solid #eee;
+  margin: 0 30rpx;
+}
+
+.movie_item:last-child {
+  border: 0;
+  /* margin-bottom: 100rpx; */
+}
+
+.movie_item > view {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.movie_item image {
+  width: 160rpx;
+  height: 220rpx;
+}
+
+.movie_main_info {
+  font-size: 28rpx;
+  color: #888;
+  width: 400rpx;
+  height: 200rpx;
+}
+
+.movie_name {
+  font-size: 34rpx;
+  color: #000;
+}
+
+.cinema_msg {
+  color: #bbb;
+}
+
+.movie_item > .movie_pay {
+  height: 200rpx;
+  align-items: flex-end;
+}
+
+.movie_pay > text {
+  color: #ffd700;
+  font-size: 38rpx;
+}
+
+.movie_pay > text text {
+  font-size: 24rpx;
+}
+
+.movie_pay > button {
+  background-color: #f13e22;
+}

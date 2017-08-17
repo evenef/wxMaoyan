@@ -1,0 +1,27 @@
+@import "cinema_item/cinema_item.wxss";
+
+.pay_container {
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+  padding-top: 90rpx;
+}
+
+.date_scroll {
+  white-space: nowrap;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.date_item {
+  display: inline-block;
+  padding: 20rpx 30rpx;
+}
+
+.date_item_cl {
+  border-bottom: 2px solid #f13e22;
+  color: #f13e22;
+}

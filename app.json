@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/hot/hot",
+    "pages/seat/seat",
+    "pages/pay_scene/pay_scene",
+    "pages/pay/pay",
+    "pages/info/info",
+    "pages/index/index",
+    "pages/cinema/cinema",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f13e22",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "电影（我是icon）",
+        "pagePath": "pages/hot/hot"
+      },
+      {
+        "text": "影院（我也是icon）",
+        "pagePath": "pages/cinema/cinema"
+      }
+    ]
+  }
+}

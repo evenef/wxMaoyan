@@ -1,0 +1,38 @@
+<view class="pay_scene">
+  <view class="header">
+    <text class="cinemaName">{{cinema}}</text>
+    <text class="address">{{cinemaData.address}}</text>
+  </view>
+  <scroll-view scroll-x class="movies">
+    <view>
+      <image class="backImg" src="../../{{movieData.firstImg}}" mode="aspectFill"></image>
+      <image class="logoImg" src="../../{{movieData.firstImg}}" mode="aspectFill"></image>
+    </view>
+  </scroll-view>
+  <view class="movie">
+    <view class="movie_head">
+      <text class="movieName">{{movieData.nameCN}} </text><text class="movieScore">{{movieData.scoreUser}}</text><text class="movieScoreIcon">分</text>
+    </view>
+    <view class="movieInfo">
+      <text>{{movieData.min}}分钟 | {{movieData.type}} | {{movieData.actors}}</text>
+    </view>
+  </view>
+  <scroll-view scroll-x class="date">
+    <view class="date_item {{item === chooseDateString ? 'date_item_cl' : ''}}" wx:for="{{date}}" data-date="{{item}}" wx:key="{{item}}" catchtap="date_cl">{{item}}</view>
+  </scroll-view>
+  <view class="sceneItem" wx:for="{{sceneArrShow}}" wx:key="{{item}}">
+    <view>
+      <text class="startTime">{{item.startTime}}</text>
+    </view>
+    <view>
+      <text class="language">国语/英语 2D/3D</text>
+      <text class="downText">{{item.roomName}}</text>
+    </view>
+    <view class="price">
+      <text>{{item.price}}<text class="price_icon">元</text></text>
+    </view>
+    <view class="btn">
+      <button style="background-color: #f13e22;color: #fff;width: 100rpx;font-size: 22rpx;" catchtap="toSeat" data-sceneid="{{item._id}}">购票</button>
+    </view>
+  </view>
+</view>

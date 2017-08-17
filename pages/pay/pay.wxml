@@ -1,0 +1,7 @@
+<view class="pay_container">
+  <scroll-view class="date_scroll" scroll-x>
+    <view class="date_item {{item === chooseDateString ? 'date_item_cl' : ''}}" wx:for="{{date}}" data-date="{{item}}" wx:key="{{item}}" catchtap="date_cl">{{item}}</view>
+  </scroll-view>
+  <import src="cinema_item/cinema_item.wxml" />
+  <template is="cinema_item" wx:for="{{cinemaShowArr}}" data="{{item}}" wx:key="{{item}}"></template>
+</view>

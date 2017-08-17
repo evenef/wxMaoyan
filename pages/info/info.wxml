@@ -1,0 +1,56 @@
+<view class="info_container">
+  <view class="banner">
+    <image src="{{'../../' + data.firstImg}}" mode="aspectFill"></image>
+  </view>
+  <view class="pay">
+    <text catchtap="toPay">购　票</text>
+  </view>
+  <view class="info_head">
+    <image src="{{'../../' + data.firstImg}}" mode="aspectFill"></image>
+    <view>
+      <text class="nameCN">{{data.nameCN}}</text>
+      <text class="nameEN">{{data.nameEN}}</text>
+      <view class="star">***star***</view>
+      <text>（{{data.scoreUser * 10000}}人评）</text>
+      <text>{{data.type}}</text>
+      <text>{{data.country}}/{{data.min}}分钟</text>
+      <text>{{data.showTime}}{{data.showPlace}}</text>
+    </view>
+  </view>
+  <view class="towBtn">
+    <button>❤ 想看</button>
+    <button><image src="../../../img/none-star.png"/> 评分</button>
+  </view>
+  <view class="{{storyClass}}">
+    <text>{{data.story}}</text>
+    <text class="{{storyBtnClass}}" catchtap="storyAllBtn">∨</text>
+  </view>
+  <view class="people">
+    <text>演职人员</text>
+    <import src="info_people/info_people.wxml" />
+    <scroll-view class="peopleScroll" scroll-x>
+      <template is="info_people" data="{{...data.director}}"></template>
+      <template is="info_people" wx:for="{{data.actors}}" data="{{...item}}" wx:key="{{item}}"></template>
+    </scroll-view>
+  </view>
+  <view class="money">
+    <text>票房</text>
+    <view class="moneyView">
+      <view>
+        <text>{{ranking}}</text>
+        <text>总票房排行</text>
+      </view>
+      <view>
+        <text>{{(data.getMoney - data.getMoney%10000)/10000}}</text>
+        <text>累计票房(万)</text>
+      </view>
+    </view>
+  </view>
+  <view class="imgs">
+    <text>剧照和图集</text>
+    <import src="info_imgs/info_imgs.wxml" />
+    <scroll-view class="imgsScroll" scroll-x>
+      <template is="info_imgs" wx:for="{{data.imgs}}" data="{{item}}" wx:key="{{item}}"></template>
+    </scroll-view>
+  </view>
+</view>

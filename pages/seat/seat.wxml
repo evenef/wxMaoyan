@@ -1,0 +1,27 @@
+<view class="classname">
+  <view class="header">
+    <text>{{sceneData.cinemaName}}</text>
+    <text>{{sceneData.date}} {{sceneData.startTime}} 国语3D</text>
+  </view>
+  <view class="tips">
+    <view>
+      <view class="icon empty"></view><text> 可选</text>
+    </view>
+    <view>
+      <view class="icon none"></view><text> 不可选</text>
+    </view>
+    <view>
+      <view class="icon select"></view><text> 已选</text>
+    </view>
+  </view>
+  <view class="seatWin">
+    <view class="tr" wx:for="{{sceneData.seat}}" wx:key="{{item}}" wx:for-item="item_tr" wx:for-index="index_tr" wx:key="{{item_tr}}">
+      <text class="trNum">{{index_tr + 1}}</text>
+      <view class="icon {{item_td === '*' ? 'select' : (item_td === '1' ? 'none' : '')}}" wx:for="{{item_tr}}" wx:for-item="item_td" wx:for-index="index_td" wx:key="{{item_td}}" data-index="{{index_tr}}-{{index_td}}" catchtap="seatSelectBtn"></view>
+    </view>
+  </view>
+  <view class="enter">
+    <view class="price"><text style="color: #999;font-size: 30rpx;font-weight: bold;">合计</text> {{money}}<text style="font-size: 30rpx;"> 元</text></view>
+    <view class="enterBtn" catchtap="enterBtn">确认选座</view>
+  </view>
+</view>

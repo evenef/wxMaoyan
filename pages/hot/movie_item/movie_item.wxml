@@ -1,0 +1,15 @@
+<template name="movie_item">
+  <view class="movie_item" data-movie_id="{{data._id}}" catchtap="toMovieInfo">
+     <image src="{{'../../' + (data.firstImg ? data.firstImg : 'img/error.jpg')}}" mode="aspectFill"></image>
+     <view class="movie_main_info">
+      <text class="movie_name">{{data.nameCN}}</text>
+      <text>{{data.type}}</text>
+      <text>主演：{{data.actors}}</text>
+      <text class="cinema_msg">今天{{data.cinemaNum}}家影院放映{{data.sceneNum}}场</text>
+     </view>
+     <view class="movie_pay">
+      <text>{{data.scoreUser ? data.scoreUser : "0"}}<text>分</text></text>
+      <button type="primary" size="mini" data-movie_id="{{data._id}}" hover-class="none" catchtap="toPay">购票</button>
+     </view>
+  </view>
+</template>

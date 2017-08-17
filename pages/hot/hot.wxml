@@ -1,0 +1,13 @@
+<view class="hot_container">
+  <view class="hot_nav">
+    <text class="city" catchtap="getPlace">{{nowCity}} <text class="nav_icon_down">∨</text></text>
+    <text class="{{hot_btn_class}}" catchtap="nav_btn" data-page="hot">热映</text>
+    <text class="{{wait_btn_class}}" catchtap="nav_btn" data-page="wait">待映</text>
+    <icon type="search" size="20" color="#f13e22" />
+  </view>
+  <view class="movie_content">
+    <import src="movie_item/movie_item.wxml" />
+    <template is="movie_item" wx:for="{{movieData.dataArr}}" data="{{data: item}}" wx:key="item"></template>
+  </view>
+  <text class="bottomTips">{{bottomTipsText}}</text>
+</view>

@@ -1,0 +1,194 @@
+@import "info_people/info_people.wxss";
+@import "info_imgs/info_imgs.wxss";
+
+.info_container {
+  font-size: 30rpx;
+  background-color: #eee;
+  padding-bottom: 120rpx;
+}
+
+.info_container > view {
+  padding: 30rpx;
+  margin-bottom: 26rpx;
+}
+
+.info_container > view:last-child {
+  margin: 0;
+}
+
+.info_container > .banner {
+  padding: 0;
+  width: 100%;
+  height: 530rpx;
+  filter: brightness(0.5);
+}
+
+.banner > image {
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+}
+
+.info_container > .pay {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #f13e22;
+  font-size: 38rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.info_head {
+  font-size: 24rpx;
+  color: #aaa;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+
+.nameCN {
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.nameEN {
+  color: #fff;
+}
+
+.info_head > image {
+  width: 230rpx;
+  height: 340rpx;
+  border: 2px solid #aaa;
+}
+
+.info_head > view {
+  width: 420rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info_container > .towBtn {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 420rpx;
+}
+
+.towBtn > button {
+  margin: 0;
+  font-size: 30rpx;
+  line-height: 74rpx;
+  color: #ccc;
+  width: 330rpx;
+  height: 76rpx;
+  background-color: rgba(200, 200, 200, 0.4);
+  border: 1px solid rgba(200, 200, 200, 0.6);
+}
+
+.towBtn > button::after {
+  border: 0;
+}
+
+.towBtn > button image {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.story {
+  height: 180rpx;
+  overflow: hidden;
+  background-color: #fff;
+  letter-spacing: 5rpx;
+  line-height: 160%;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.storyAll {
+  height: auto;
+}
+
+.story_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  text-align: center;
+  width: 750rpx;
+  height: 72rpx;
+  line-height: 66rpx;
+  background-color: #fff;
+}
+
+.storyAll_bottom {
+  display: none;
+}
+
+.info_container > .people {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.peopleScroll {
+  white-space: nowrap;
+  width: 750rpx;
+  margin-top: 20rpx;
+  position: relative;
+  left: -30rpx;
+}
+
+.imgs {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.imgsScroll {
+  white-space: nowrap;
+  width: 750rpx;
+  margin-top: 20rpx;
+  position: relative;
+  left: -30rpx;
+}
+
+.money {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.moneyView {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.moneyView > view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moneyView > view text:first-child {
+  color: #f13e22;
+  font-size: 42rpx;
+}
+
+.moneyView > view text:last-child {
+  font-size: 26rpx;
+  color: #aaa;
+}

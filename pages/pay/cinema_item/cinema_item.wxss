@@ -1,0 +1,57 @@
+.cinema_item {
+  margin: 30rpx 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.cinemaName {
+  /* font-family: "黑体"; */
+  /* font-weight: bold; */
+  font-size: 36rpx;
+  margin-bottom: 24rpx;
+}
+
+.price, .price_i {
+  color: #f13e22;
+  font-family: "黑体";
+  font-size: 42rpx;
+  position: relative;
+  top: 8rpx;
+}
+
+.price_i {
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+}
+
+.address, .tipsicon, .scene {
+  color: #aaa;
+  font-size: 28rpx;
+  margin-bottom: 14rpx;
+  position: relative;
+}
+
+.scene {
+  margin: 0;
+}
+
+.away {
+  float: right;
+}
+
+.icon {
+  display: inline-block;
+  height: 32rpx;
+  padding: 0 6rpx;
+  margin-right: 10rpx;
+  text-align: center;
+  line-height: 28rpx;
+  font-size: 24rpx;
+  color: #00c5cd;
+  border: 1px solid #00c5cd;
+  border-radius: 8rpx;
+}
+.iconOrange{
+  color: orange;
+  border-color: orange;
+}

@@ -1,0 +1,7 @@
+<template name="info_people">
+  <view class="info_people">
+     <image src="../../../{{img}}" mode="aspectFill"></image>
+     <text>{{name}}</text>
+     <text>{{act}}</text>
+  </view>
+</template>
